@@ -6,7 +6,6 @@ struct node{
     struct node* left;
     struct node* right;
 };
-
 struct node* createNode(int data){
     struct node *n; // creating a node pointer
     n = (struct node *) malloc(sizeof(struct node)); // Allocating memory in the heap
@@ -15,7 +14,6 @@ struct node* createNode(int data){
     n->right = NULL; // Setting the left and right children to NULL
     return n; // Finally returning the created node
 }
-
 void preOrder(struct  node* root){
     if(root!=NULL){
         printf("%d ", root->data);
@@ -23,7 +21,6 @@ void preOrder(struct  node* root){
         preOrder(root->right);
     }
 }
-
 void postOrder(struct  node* root){
     if(root!=NULL){
         postOrder(root->left);
@@ -31,7 +28,6 @@ void postOrder(struct  node* root){
         printf("%d ", root->data);
     }
 }
-
 void inOrder(struct  node* root){
     if(root!=NULL){
         inOrder(root->left);
@@ -39,7 +35,6 @@ void inOrder(struct  node* root){
         inOrder(root->right);
     }
 }
-
 int main(){
      
     // Constructing the root node - Using Function (Recommended)
