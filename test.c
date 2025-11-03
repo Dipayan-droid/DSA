@@ -1,12 +1,12 @@
-
-    #include<stdio.h>
-    int main()
-    {
-        int a;
-        int arr[5] = {1, 2, 3, 4, 5};
-        arr[1] = ++arr[1];
-        a = arr[1]++;
-        arr[1] = arr[a++];
-        printf("%d,%d", a, arr[1]);
-        return 0;
-    }
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str1[] = "I-LOVE-C";
+    char str2[] = {'I', '-', 'L', 'O', 'V', 'E', '-', 'C'};
+    int n1 = sizeof(str1) / sizeof(str1[0]);
+    int n2 = sizeof(str2) / sizeof(str2[0]);
+    printf("str1=%d",strlen(str1));
+    printf("n1=%d, n2=%d", n1, n2);
+    return 0;
+}

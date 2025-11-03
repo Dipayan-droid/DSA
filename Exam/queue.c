@@ -92,7 +92,5 @@ int main() {
                 printf("Invalid choice! Please try again.\n");
         }
     } while(choice != 4);
-
-    free(q.arr);
     return 0;
 }
